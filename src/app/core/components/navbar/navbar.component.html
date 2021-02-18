@@ -1,0 +1,75 @@
+<header>
+    <div class="container">
+        <div class="row py-2 align-items-end">
+            <div class="col-6 pl-0">
+                <img src="assets/images/logo.png" alt="">
+                <!-- <h1><span>Jaya Raghavendra</span>Aritaku Bhojanam</h1> -->
+            </div>
+            <div class="col-6 text-right pr-0">
+                <div class="menu-button-row">
+                    <button mat-raised-button color="primary" class="ml-1">Home</button>
+                    <button mat-raised-button color="primary" class="ml-1">About</button>
+                    <button mat-raised-button color="primary" class="ml-1">Menu</button>
+                    <button mat-raised-button color="primary" class="ml-1">Service</button>
+                    <button mat-raised-button color="primary" class="ml-1">Contact</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="banner">
+    <div class="overlay-bg"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="banner-content p-3">
+                    <div class="row align-items-center mt-4">
+                        <div class="col-6 pl-0">
+                            <h1><span>Organic</span>Natural Food</h1>
+                        </div>
+                        <div class="col-6 pr-0">
+                            <mat-card>
+                                <mat-card-header>
+                                    <mat-card-title>Book our service</mat-card-title>
+                                </mat-card-header>
+                                <mat-card-content>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <mat-form-field appearance="outline">
+                                                <mat-label>Name</mat-label>
+                                                <input matInput placeholder="">
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="col-6">
+                                            <mat-form-field appearance="outline">
+                                                <mat-label>Phone</mat-label>
+                                                <input matInput placeholder="">
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <mat-form-field appearance="outline">
+                                                <mat-label>Choose a date</mat-label>
+                                                <input matInput [matDatepicker]="picker">
+                                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                                <mat-datepicker #picker></mat-datepicker>
+                                              </mat-form-field>
+                                        </div>
+                                        <div class="col-6">
+                                            <mat-form-field appearance="outline">
+                                                <mat-label>Email</mat-label>
+                                                <input matInput placeholder="">
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                    <button mat-raised-button color="primary">Submit</button>
+                                </mat-card-content>
+                            </mat-card>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
