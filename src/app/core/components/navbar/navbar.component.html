@@ -7,11 +7,15 @@
             </div>
             <div class="col-6 text-right pr-0">
                 <div class="menu-button-row">
-                    <button mat-raised-button color="primary" class="ml-1">Home</button>
-                    <button mat-raised-button color="primary" class="ml-1">About</button>
-                    <button mat-raised-button color="primary" class="ml-1">Menu</button>
-                    <button mat-raised-button color="primary" class="ml-1">Service</button>
-                    <button mat-raised-button color="primary" class="ml-1">Contact</button>
+                    <button mat-raised-button color="primary" class="ml-1" routerLink="home">Home</button>
+                    <button mat-raised-button color="primary" class="ml-1" routerLink="about">About</button>
+                    <button mat-raised-button [matMenuTriggerFor]="menu" color="primary" class="ml-1">Menu</button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item routerLink="menu">15 Days Daily Carrier Menu</button>
+                        <button mat-menu-item routerLink="menu">Night Dinner Menu</button>
+                    </mat-menu>
+                    <button mat-raised-button color="primary" class="ml-1" routerLink="service">Service</button>
+                    <button mat-raised-button color="primary" class="ml-1" routerLink="contact">Contact</button>
                 </div>
             </div>
         </div>
@@ -54,7 +58,7 @@
                                                 <input matInput [matDatepicker]="picker">
                                                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                                                 <mat-datepicker #picker></mat-datepicker>
-                                              </mat-form-field>
+                                            </mat-form-field>
                                         </div>
                                         <div class="col-6">
                                             <mat-form-field appearance="outline">
