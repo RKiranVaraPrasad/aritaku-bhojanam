@@ -45,5 +45,20 @@ section {
         h2{
             font-size: 120px;
         }
+        ul{
+            margin-bottom: 0;
+        }
+        th{
+            background: #da470f;
+            color: white;
+        }
+        tr{
+            &:nth-child(2n+2){
+                td{
+                    background-color: #dcffc3;
+                    font-weight: 600;
+                }
+            }
+        }
     }
 }
